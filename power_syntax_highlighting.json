@@ -1,0 +1,49 @@
+{
+  "name": "Power Script",
+  "scopeName": "source.power",
+  "fileTypes": [".pwr", ".power"],
+  "patterns": [
+    { "include": "#keywords" },
+    { "include": "#comment" },
+    { "include": "#strings" }
+  ],
+  "repository": {
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.power",
+          "match": "\\b(if|else|while|for|return)\\b"
+        },
+        {
+          "name": "storage.type.power",
+          "match": "\\b(var|const|function)\\b"
+        }
+      ]
+    },
+    "comment": {
+      "patterns": [
+        {
+          "name": "comment.line.double-slash.power",
+          "begin": "//",
+          "end": "$"
+        }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.double.power",
+          "begin": "\"",
+          "end": "\"",
+          "patterns": [{ "match": "\\\\.", "name": "constant.character.escape.power" }]
+        },
+        {
+          "name": "string.quoted.single.power",
+          "begin": "'",
+          "end": "'",
+          "patterns": [{ "match": "\\\\.", "name": "constant.character.escape.power" }]
+        }
+      ]
+    }
+  }
+}

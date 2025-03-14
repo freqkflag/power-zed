@@ -1,0 +1,21 @@
+// This is a Power Script example file
+var count = 10;
+const maxLimit = 100;
+
+// Function to calculate a value
+function calculateSquare(value) {
+    if (value > maxLimit) {
+        return maxLimit; // Return maxLimit if value exceeds
+    } else {
+        return value * value; // Otherwise, return the square
+    }
+}
+
+// While loop
+while (count > 0) {
+    var result = calculateSquare(count);
+    console.log("Square of", count, "is", result);
+    count = count - 1; // Decrement count
+}
+
+return "Done!";

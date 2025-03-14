@@ -1,0 +1,38 @@
+{
+  "name": "Power Dark Mode",
+  "type": "dark",
+  "colors": {
+    "editor.background": "#1e1e2e",
+    "editor.foreground": "#dcdcdc",
+    "editor.lineHighlightBackground": "#3e3e4e",
+    "editorCursor.foreground": "#ffffff",
+    "editor.selectionBackground": "#264f78"
+  },
+  "tokenColors": [
+    {
+      "scope": "constant.numeric",
+      "settings": {
+        "foreground": "#f78c6c"
+      }
+    },
+    {
+      "scope": "variable.language, entity.name.function",
+      "settings": {
+        "foreground": "#82aaff"
+      }
+    },
+    {
+      "scope": "string.quoted",
+      "settings": {
+        "foreground": "#c3e88d"
+      }
+    },
+    {
+      "scope": "comment",
+      "settings": {
+        "foreground": "#5c6370",
+        "fontStyle": "italic"
+      }
+    }
+  ]
+}

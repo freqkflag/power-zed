@@ -1,0 +1,24 @@
+[extension]
+id = "power-extension"
+name = "Power Extension"
+version = "1.0.0"
+description = "A Zed extension providing enhanced power user features."
+authors = ["Joey King"]
+repository = "https://github.com/freqkflag/power-extension"
+license = "MIT"
+
+[languages]
+[[languages.power]]
+id = "power"
+name = "Power Script"
+scope = "source.power"
+file_extensions = [".pwr", ".power"]
+comment_style = { line = "//" }
+
+[themes]
+[[themes.power-theme]]
+id = "power-theme"
+name = "Power Dark Mode"
+path = "themes/power-theme.json"
+
+dependencies = []
